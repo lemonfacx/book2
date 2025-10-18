@@ -29,13 +29,18 @@
     .page {
       flex: 0 0 auto;
       width: 400px;
-      height: 90%;            /* sayfa boyutu, üstten/dan boşluğu azaltır */
+      height: 90%; /* sayfanın yüksekliği */
       background-size: cover;
       background-position: center;
       border-radius: 16px;
       box-shadow: 0 4px 20px rgba(0, 0, 0, 0.2);
       position: relative;
       scroll-snap-align: start;
+    
+      /* EKLENENLER: içeriği ortalamak için */
+      display: flex;
+      justify-content: center; /* yatay ortalama */
+      align-items: center;     /* dikey ortalama */
     }
     .ar-link {
       position: absolute;
