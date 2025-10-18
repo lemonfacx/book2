@@ -7,40 +7,36 @@
   <style>
     body {
       margin: 0;
-      height: 100vh;
-      display: flex;
-      justify-content: center; /* yatay ortalama */
-      align-items: center;     /* dikey ortalama */
-      font-family: sans-serif;
-      overflow: hidden;
       background-color: #f2f2f2;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      height: 100vh;
+      overflow: hidden;
+      font-family: sans-serif;
     }
     .book {
       display: flex;
       width: 100vw;
-      height: 100%;          /* 100% yükseklik */
+      height: 90vh;
       overflow-x: auto;
       scroll-snap-type: x mandatory;
       align-items: center;
-      justify-content: center; /* sayfaları ortalamak için */
-      gap: 20px;               /* sayfalar arası boşluk */
-      padding: 0;              /* padding kaldırıldı */
+      justify-content: flex-start;
+      padding: 10px;
     }
     .page {
-      flex: 0 0 auto;
-      width: 400px;
-      height: 90%; /* sayfanın yüksekliği */
+      flex: 0 0 100%;
+      max-width: 400px;
+      height: 100%;
       background-size: cover;
       background-position: center;
-      border-radius: 16px;
+      background-color: white;
       box-shadow: 0 4px 20px rgba(0, 0, 0, 0.2);
+      border-radius: 16px;
       position: relative;
       scroll-snap-align: start;
-    
-      /* EKLENENLER: içeriği ortalamak için */
-      display: flex;
-      justify-content: center; /* yatay ortalama */
-      align-items: center;     /* dikey ortalama */
+      margin: 0 10px;
     }
     .ar-link {
       position: absolute;
